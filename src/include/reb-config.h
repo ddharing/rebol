@@ -150,6 +150,11 @@ These are now obsolete (as of A107) and should be removed:
 #define HAS_LL_CONSTS
 #endif
 
+#ifdef TO_LINUX_X64				// Linux/Intel
+#define ENDIAN_LITTLE
+#define HAS_LL_CONSTS
+#endif
+
 #ifdef TO_LINUX_PPC				// Linux/PPC
 #define ENDIAN_BIG
 #define HAS_LL_CONSTS
